@@ -4,7 +4,8 @@
   "description": "a Domain Names Service & De-Gravatar hybrid on the Arweave network",
   "main": "lib/api.js",
   "scripts": {
-    "start": "node lib/api.js"
+    "start": "node lib/api.js",
+    "build-contract": "node build.js"
   },
   "repository": {
     "type": "git",
@@ -28,8 +29,7 @@
     "redstone-smartweave": "^0.3.10-alpha.12",
     "secure-env": "^1.2.0"
   },
-  "engines": {
-    "node": "14.17.1",
-    "npm": "6.14.13"
+  "devDependencies": {
+    "esbuild": "^0.13.13"
   }
 }
